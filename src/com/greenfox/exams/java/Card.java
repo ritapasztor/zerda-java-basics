@@ -8,6 +8,7 @@ public class Card {
     private String color;
     private int value;
 
+
     public Card(String color, int value) {
         this.color = color;
         this.value = value;
@@ -18,4 +19,11 @@ public class Card {
     }
 
 
+    @Override
+    public String toString() {
+        return "Card{" +
+                "color='" + color + '\'' +
+                ", value=" + value +
+                '}';
+    }
 }
