@@ -13,8 +13,6 @@ public class BlackJack extends JFrame{
 
     Deck deck;
 
-
-
     private JButton reset, drawCard;
     private JLabel userLabel, houseLabel;
 

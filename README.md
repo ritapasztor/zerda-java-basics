@@ -1,4 +1,4 @@
-# EXAM: Java Basics
+﻿# EXAM: Java Basics
 
 ### Getting Started
  - Fork this repository under your own account
@@ -104,17 +104,34 @@ class TestApple {
 ```
 
 Are the tests passing? Detail your answer! [2p] Fix the situation! [2p]
-
+testAdd test is passing, as the method says return 5, does not matter what are the given integers. 
+max of three method is not correct, though the test is passing.
 #### Explain what you did, and answer the questions here:
 
 
 ## 4. Question time! (~20 mins) [6p]
 
 ### Where the abstract class is useful? [2p]
-#### Your answer:
+#### Your answer: Abstract class is useful when you need to define concrete variables or/and methods
+and use that code for several related classes. When you except that more classes
+will need to use the same code. To declare non-static and non-final variables.
+Absrtact class methods can be overriden but not necessarily need to be.
 
 ### Describe a method! Show the necessary parts and how are them called! [2p]
-#### Your answer:
+#### Your answer:a method is a collection of statements to describe and perform an operation.
+Method name is usually a verb. Methods are usually public (can be situatuations when only the
+current class uses them), then you need to add the visszateresi ertek type e.g. String, int OR say void, meaning
+that no return value is needed. You can add variables, that the method will use to work, but not necessarily needed,
+depends on the method itself. 
+They always have simazarojel after the name - this is where variable can be added, and then curly {} brackets, 
+where actual statemenst goes. 
+Method called: if variables needed - add variables after the name with the correct type
+play(3);
+public void play(int game) {}
 
 ### What is the constructor? When it is used? [2p]
-#### Your answer:
+#### Your answer:Constructor is where the new object is first instantiated. Declaration looks
+like a method, they have the same name as the class, and don't have return type.
+Always created within the class, but used to "set" private fields outside from that class.
+Usually used when the given data is not often changes e.g. date of birth. 
+You can declare an object via its constructors from anouther class.  
